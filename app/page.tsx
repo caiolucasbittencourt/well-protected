@@ -1,10 +1,7 @@
 "use client";
 
 import { useState, useEffect } from "react";
-import { Inter } from "next/font/google";
 import { motion } from "framer-motion";
-
-const inter = Inter({ subsets: ["latin"] });
 
 const criteria = [
   { id: "length", text: "8+ Characters" },
@@ -68,7 +65,7 @@ export default function Home() {
 
   return (
     <div
-      className={`min-h-screen bg-black text-white flex items-center justify-center p-4 antialiased ${inter.className}`}
+      className={`min-h-screen bg-black text-white flex items-center justify-center p-4 antialiased`}
     >
       <motion.div
         initial={{ opacity: 0, y: -20 }}
@@ -117,7 +114,18 @@ export default function Home() {
           })}
         </div>
 
-        <p className="text-zinc-700 text-xs mt-16">
+        <div className="mt-8 w-full text-left px-4">
+          <ul className="list-disc list-inside space-y-2 text-zinc-400 text-sm">
+            <li>Avoid personal info (names, birth dates) or common words.</li>
+            <li>
+              Use a unique password for each account. A password manager can
+              help!
+            </li>
+            <li>Enable Two-Factor Authentication (2FA) whenever possible.</li>
+          </ul>
+        </div>
+
+        <p className="text-zinc-700 text-xs mt-10">
           This check is performed entirely in your browser.
         </p>
       </motion.div>
