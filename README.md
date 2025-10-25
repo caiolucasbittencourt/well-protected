@@ -20,3 +20,11 @@ Uma ferramenta interativa que verifica a força de senhas em tempo real.
 - TypeScript
 - Tailwind CSS
 - Framer Motion
+
+## Instalação
+
+```bash
+git clone https://github.com/caiolucasbittencourt/well-protected
+cd well-protected
+npm install
+npm run dev
